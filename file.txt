@@ -1,0 +1,100 @@
+Brain tumor and detection with deep learning
+[Document subtitle]
+1
+2
+Brain tumor
+abstract
+There has been a significant increase in the number of medical cases
+involving brain tumors in the last few years, ranking it the 1 0th most
+common form of tumor affecting children and adults. Detection and
+segmentation of brain tumor is most crucial and time taking task in the
+field of medical image processing because of high variation of the size,
+shape, location of brain tumor. Magnetic Resonance Imagining (MRI) is
+broadly used for detecting tumor and diagnosis various tissues
+abnormalities. Accurate investigation of the size and location of brain
+tumor plays an important role in the diagnosis of brain tumor. In this
+paper, we present a deep learning-based method to segment and
+classify brain tumor in MRI. First, we preprocessed images using image
+augmentation and Gaussian blur filter. Then segmentation is done using
+binary thresholding. For features extraction, we use morphological
+operations. At the end, using CNN classify the brain MRI as normal or
+abnormal. We use Kaggle Dataset in this work. We use 255 brain MRI
+from it 1 55 contains tumor and 98 images of healthy brain to train the
+model and get 97% accuracy. To test the model, we use different Kaggle
+datasets of brain MRI
+3
+Brain tumor
+table of content
+1 .Introduction :
+1 .1 brain tumor
+1 .2 purpose
+1 .3 scope
+1 .4 glossary
+2.planning :
+2.1 system request
+2.2 Economic feasibility
+2.3work plan
+3.analysis:
+3.1 system concept
+3.2Constraints
+3.3 Risks
+3.4Requirements
+4.designs:
+4.1 Description of Problem
+4.2 Technologies Used
+4.3 Architecture Design
+4.4Class diagrams
+5.impelemintation :
+5.1 important functions
+5.2 Image Preprocessing
+5.3Skull Masking
+5.4 Image Segmentation
+5.5 Image Classification
+6.result
+7.conclustion
+8.refrences
+4
+Brain tumor
+Introduction
+5
+Brain tumor
+1 .Introduction :
+1 .1 Brain tumor:
+The brain tumor is one all the foremost common and, therefore, the deadliest brain
+diseases that have affected and ruined several lives in the world. Cancer is a disease in
+the brain in which
+Cancer cells ascends in brain tissues.
+Conferring to a new study on cancer, more than one lakh people are diagnosed with brain
+tumors every year around the globe. Regardless of stable efforts to overcome the
+complications of brain tumors, figures show unpleasing results for tumor patients.
+To contest this, scholars are working on computer vision for a better understanding of the
+early stages of tumors and how to overcome using advanced treatment options. Magnetic
+resonance
+(MR) imaging and computed tomography (CT) scans of the brain are the two most
+general tests
+to check the existence of a tumor and recognize its position for progressive treatment
+decisions.
+These two scans are still used extensively for their handiness, and the capability to yield
+high-definition images of pathological tissues is more. At present, there are several other
+conducts offered for tumors, which include surgery, therapies such as radiation therapy,
+and chemotherapy. The decision for which treatment relies on the many factors such as
+size, kind, and grade of the tumor present in the MR image.
+It’s conjointly chargeable for whether or not cancer has reached the other portions of the
+body. Precise sighting of the kind of brain abnormality is enormously needed for
+treatment operations with a resolution to diminish diagnostic errors.
+The precision is often makeshift utilizing computer-aided diagnosis (CAD) systems.
+The essential plan of computer vision is to produce a reliable output, which is an
+associate estimation to assist medical doctors in image understanding and to lessen
+image reading time. These advancements increase the steadiness and correctness of
+medical diagnosis — however, segmenting an MR image of the tumor and its area itself a
+very problematic job.
+The occurrence of tumors in specific positions within the brain image without
+distinguishing picture intensities is an additional issue that makes a computerized
+detection of brain tumor and segmentation a problematic job.
+1 .2 purpose:
+6
+Brain tumor
+In past few decades, brain tumor segmentation in Magnetic Resonance Imaging (MRI)
+has become an emergent research area in the field of medical imaging systems.
+Accurate detection of brain tumor plays a vital role in the diagnosis of brain cancer.
+Our project aims to develop a program which analyses the Magnetic Resonance Images
